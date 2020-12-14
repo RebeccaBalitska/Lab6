@@ -1,0 +1,12 @@
+import random
+
+n = int(input("Введіть кількість елементів вектора: "))
+k = float(input("Введіть множник(k): "))
+
+vect = [random.uniform(0, 10) for i in range(n)]
+
+print('a = ', vect)
+
+vect = [i * k for i in vect]
+
+print('k * a = ', vect)
