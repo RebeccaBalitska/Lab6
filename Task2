@@ -1,0 +1,25 @@
+def first_func(n):
+    summ = 0
+    for i in range(1, n + 1):
+        summ += 1/i
+    return summ
+
+def fact(n):
+    mul = 1
+    for i in range(1, n + 1):
+        mul *= i
+    return mul
+
+
+n = int(input("Введіть n: "))
+arr = []
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        arr.append(first_func(i))
+    else:
+        arr.append(fact(i)/2 + 3)
+
+print(arr)
+
+	
