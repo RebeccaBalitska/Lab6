@@ -1,0 +1,11 @@
+import random
+
+n = int(input("Введіть кількість значень: "))
+arr = [random.randint(0, 10) for i in range(n)]
+print(arr)
+
+mul = 1
+for i in arr:
+    mul *= i
+
+print(mul ** (1 / n))
