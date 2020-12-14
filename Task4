@@ -1,0 +1,8 @@
+import random
+
+n = int(input("Введіть кількість значень: "))
+
+arr = [random.randint(-5, 5) for i in range(n)]
+print("Початковий масив: ", arr)
+arr.sort(reverse = True)
+print("Кінцевий результат: ", arr)
